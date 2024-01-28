@@ -1,6 +1,9 @@
-h1{
-    font-size: small;
-    font-family: 'Courier New', Courier, monospace;
+*{
+    margin:0;
+    padding:0;
 }
-h2{ font-size: small;
-    font-family: 'Courier New', Courier, monospace;}
+.title.first-title{
+    background-color: crimson;
+    padding:10px;
+    color:cornsilk;
+}
