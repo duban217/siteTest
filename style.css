@@ -2,8 +2,17 @@
     margin:0;
     padding:0;
 }
-.title.first-title{
-    background-color: crimson;
-    padding:10px;
-    color:cornsilk;
+.container{
+width: 400px;
+height:400px;
+background-color: crimson;
+margin: auto;
 }
+.child{
+width:400px;
+height: 50px;
+background-color: cornsilk;
+}
+
+
+
