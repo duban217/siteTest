@@ -1,17 +1,10 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
-.container{
-width: 400px;
-height:400px;
-margin: auto;
-}
-.child{
-width:400px;
-height: 50px;
-background-color: cornsilk;
-}
+
+
 
 
 
