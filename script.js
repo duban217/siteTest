@@ -5,7 +5,7 @@ window.addEventListener("load",function(){
         container[i].style.backgroundColor="crimson";
         container[i].style.width="300px";
         container[i].style.height="300px";
-        container[i].style.margin="20px";
+       
     }
 
 });
