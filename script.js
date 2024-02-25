@@ -1,5 +1,4 @@
     var img=document.getElementsByClassName('diapoImg');
-    
     var imgVisible=0;
 
 function changerImage(){

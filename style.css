@@ -3,26 +3,29 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+}
 .title{
     color:violet;
-    text-align: center;
     padding: 20px;
 }
 .diapo{
     width:300px;
     height:200px;
-    position: relative;
     overflow: hidden;
+    margin:auto;
     
 }
 .diapoImg{
     width:100%;
     display: none;
-    position:absolute;
+    
 }
 .diapoImg.visible{
     display:block;
 }
+
 
 
 
