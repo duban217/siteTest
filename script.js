@@ -1,11 +1,12 @@
-window.addEventListener("load",function(){
+    var img=document.getElementsByClassName('diapoImg');
+    
+    var imgVisible=0;
 
-    var container=document.getElementsByClassName('container');
-    for (var i=0;i<container.length;i++){
-        container[i].style.backgroundColor="crimson";
-        container[i].style.width="300px";
-        container[i].style.height="300px";
-       
+function changerImage(){
+        img[imgVisible].classList.remove('visible');
+        imgVisible=(imgVisible+1)%img.length;
+        img[imgVisible].classList.add('visible');
     }
-
-});
+    img[0].classList.add('visible');
+document.getElementById('suivant').onclick=changerImage;
+changerImage();
