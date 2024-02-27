@@ -6,27 +6,32 @@
 body{
     text-align: center;
 }
+
 .title{
     color:violet;
-    padding: 20px;
-}
-.diapo{
+    padding: 20px;}
+
+.container{
     width:300px;
     height:200px;
-    overflow: hidden;
     margin:auto;
-    
+   
 }
 .diapoImg{
     width:100%;
     display: none;
-    
 }
 .diapoImg.visible{
-    display:block;
+    display: block;
 }
-
-
+#next{
+    border:none;
+    background-color: crimson;
+    color:cornsilk;
+    margin:10px;
+    padding:10px 20px;
+    border-radius: 5px;
+}
 
 
 
