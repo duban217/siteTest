@@ -4,80 +4,61 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(46, 46, 46);
-    text-align: center;
-    color:cornsilk;
+    background-color:pink;
 }
-h1{
-    font-size:6vh;
-    padding:60px ;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#toggle{
-    background-color: cornsilk;
-    border:none;
-    border-radius: 5px;
-    width:50px;
-    height:50px;
-    position: fixed;
-    top:20px;
-    right:20px;
-    cursor: pointer;
-}
-.line{
-    width:80%;
-  margin:auto;
-    height: 2px;
-    background-color: black;
-    display:block;
+#toggler{
+    display:flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    background: transparent;
+    right: 30px;
+    top: 30px;
+    position: fixed;
+    cursor: pointer;
+    height: 50px;
+    width:50px;
+    z-index: 1;
+    border:none;
+}
+span{
+    background-color:rgb(31, 31, 31);
+    width:100%;
+    height: 2px;
+    position:absolute;
+    display: block;
+    
 }
 .line1{
-    transform:translateY(-8px);
+transform: translateY(-10px);
 }
 .line3{
-    transform:translateY(8px);
-}
+    transform: translateY(10px);
+    }
+
 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   position:fixed;
+    padding-top: 80px;
+    transform: translateY(-100%);
+    transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    background-color: papayawhip;
     width:100vw;
     min-height: 100vh;
-    position: fixed;
-    background-color: #ffebcd;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    transform:translateY(-100%);
+    
 }
 nav.active{
-    transform:translate(0);
-    transition:transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    
+    transform: translateY(0);
 }
 nav a{
-    color:rgb(46, 46, 46);
+    color:rgb(31, 31, 31);
     text-decoration: none;
-    margin:20px 0;
-}
-#next{
-    padding:10px;
+    padding : 20px 0;
     font-size: 20px;
-    background-color: black;
-    color:cornsilk;
-    border-color: cornsilk;
-    border-width: 0.1px;
-    border-radius: 0 5px 5px 0;
+    font-family: 'Trebuchet MS';
+    display: block;
+    
 }
-.diaporama{
-    width: 300px;
-    height:300px;
-    object-fit: cover;
-    margin:auto;
-}
-.photos{
-    width:100%;
-    display: none;
-}
-.photos.visible{
-    display:block;
-}
-
