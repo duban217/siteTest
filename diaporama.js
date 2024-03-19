@@ -1,12 +1,10 @@
 var photos=document.getElementsByClassName('photos');
-var next=document.getElementById('next');
-var photoVisible=0;
-
-function changerPhoto(){
-photos[photoVisible].classList.remove('visible');
-photoVisible=(photoVisible+1)%photos.length;
-photos[photoVisible].classList.add('visible');
+var photoAffichee=0;
+function changerImage(){
+    photos[photoAffichee].classList.remove('visible');
+    photoAffichee=(photoAffichee+1)%photos.length;
+    photos[photoAffichee].classList.add('visible');
 }
-photos[photoVisible].classList.add('visible');
-next.onclick=changerPhoto;
-changerPhoto();
+photos[photoAffichee].classList.add('visible');
+document.getElementById('next').onclick=changerImage;
+changerImage();

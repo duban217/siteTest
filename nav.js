@@ -1,8 +1,9 @@
-const nav=document.querySelector('nav');
-const toggler=document.getElementById('toggler');
+var nav=document.querySelector('nav');
+var toggler=document.getElementById('toggler');
 
 function toggleNav(){
     nav.classList.toggle('active');
     toggler.classList.toggle('active');
 }
-toggler.addEventListener('click', toggleNav);
+toggler.onclick=toggleNav;
+toggleNav();

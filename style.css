@@ -2,63 +2,111 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+   
 }
 body{
-    background-color:pink;
+    background-color:#333;
+    height: 2500vh;}
+
+nav{
+    width:100vw;
+    min-height: 100vh;
+    background-color: snow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(-100%);
+    position: fixed;
+    transition:transform 0.3s cubic-bezier(0.73,0.11,0.67,0.84);
+ 
+}
+nav.active{
+    transform: translate(0);
+   
+}
+.lien{
+    text-decoration: none;
+    color:#333;
+    padding:20px 0;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
 }
 #toggler{
+    width:50px;
+    height: 50px;
+    background-color: yellow;
+    right:30px;
+    top:30px;
+    position: fixed;
+    cursor: pointer; 
+    z-index:10;
     display:flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    right: 30px;
-    top: 30px;
-    position: fixed;
-    cursor: pointer;
-    height: 50px;
-    width:50px;
-    z-index: 1;
-    border:none;
+   
 }
-span{
-    background-color:rgb(31, 31, 31);
-    width:100%;
+.line{
+    width: 100%;
     height: 2px;
+    background-color: #333;
     position:absolute;
-    display: block;
-    
+   
 }
 .line1{
-transform: translateY(-10px);
+    transform:translateY(-10px);
 }
 .line3{
-    transform: translateY(10px);
-    }
-
-nav{
+    transform:translateY(10px);
+}
+.card{
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    font-size: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   position:fixed;
-    padding-top: 80px;
-    transform: translateY(-100%);
-    transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-    background-color: papayawhip;
-    width:100vw;
-    min-height: 100vh;
+}
+.c1{
+    background-color: aqua;
+    top:60px;
+    left:60px;
+   transform:rotate(10deg);
+   opacity
+   
+}
+.child{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
     
 }
-nav.active{
-    
-    transform: translateY(0);
+.c2{
+    background-color:blanchedalmond;
+    top:70px;
+    left:70px;
+   
 }
-nav a{
-    color:rgb(31, 31, 31);
-    text-decoration: none;
-    padding : 20px 0;
-    font-size: 20px;
-    font-family: 'Trebuchet MS';
-    display: block;
-    
+.c3{
+    background-color:crimson;
+    top:80px;
+    left:80px;
 }
+.c4{
+    background-color:lightgreen;
+    top:90px;
+    left:90px;
+}
+.c5{
+    background-color: rebeccapurple;
+    top:100px;
+    left:100px;
+}
+
